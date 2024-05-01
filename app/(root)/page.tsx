@@ -11,63 +11,64 @@ export default function Home() {
       <form className='flex bg-white h-16 justify-center items-center m-4 perfect-border'>
         <input
           type='text'
-          className='selection-border p-2 w-46 m-4 h-10'
           placeholder='Enter Keyword'
+          className='input input-bordered w-full max-w-xs m-4'
         />
-        <div className='m-4'>
-          <select className='p-2 selection-border w-46'>
-            {/* <SelectTrigger className='w-[180px]'>
-              <SelectValue placeholder='Location' />
-            </SelectTrigger>
-            <SelectContent> */}
-            <option
-              value='USA'
-              className='p-2 selection-border'>
-              USA
-            </option>
-            <option
-              value='UK'
-              className='p-2 selection-border'>
-              UK
-            </option>
-            <option
-              value='India'
-              className='p-2 selection-border'>
-              India
-            </option>
-            <option
-              value='Pakistan'
-              className='p-2 selection-border'>
-              Pakistan
-            </option>
-            <option
-              value='Australlia'
-              className='p-2 selection-border'>
-              Australlia
-            </option>
-            <option
-              value='China'
-              className='p-2 selection-border'>
-              China
-            </option>
-            <option
-              value='Turkey'
-              className='p-2 selection-border'>
-              Turkey
-            </option>
-            <option
-              value='Russia'
-              className='p-2 selection-border'>
-              Russia
-            </option>
-            {/* </SelectContent> */}
-          </select>
-        </div>
-        <select className='p-2 selection-border w-46 m-4'>
-          {/* <SelectTrigger className='w-[180px]'>
-            <SelectValue placeholder='Price' />
-          </SelectTrigger>
-          <SelectContent> */}
+
+        <select className='select select-bordered w-full max-w-xs mr-4'>
+          <option
+            disabled
+            selected>
+            Country
+          </option>
+          <option
+            value='USA'
+            className='p-2 selection-border'>
+            USA
+          </option>
+          <option
+            value='UK'
+            className='p-2 selection-border'>
+            UK
+          </option>
+          <option
+            value='India'
+            className='p-2 selection-border'>
+            India
+          </option>
+          <option
+            value='Pakistan'
+            className='p-2 selection-border'>
+            Pakistan
+          </option>
+          <option
+            value='Australlia'
+            className='p-2 selection-border'>
+            Australlia
+          </option>
+          <option
+            value='China'
+            className='p-2 selection-border'>
+            China
+          </option>
+          <option
+            value='Turkey'
+            className='p-2 selection-border'>
+            Turkey
+          </option>
+          <option
+            value='Russia'
+            className='p-2 selection-border'>
+            Russia
+          </option>
+        </select>
+
+        <select className='select select-bordered w-full max-w-xs'>
+          <option
+            disabled
+            selected>
+            Price
+          </option>
           <option
             value='$1000-$15000'
             className='p-2 selection-border'>
@@ -108,11 +109,10 @@ export default function Home() {
             className='p-2 selection-border'>
             $45000-$50000
           </option>
-          {/* </SelectContent> */}
         </select>
         <button
           type='submit'
-          className='theme-background p-2 px-4 m-4 perfect-border'>
+          className='btn theme-background border-orange-600 btn-error m-2'>
           Search
         </button>
       </form>

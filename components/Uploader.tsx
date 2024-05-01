@@ -1,7 +1,5 @@
 import { writeFile } from "fs/promises";
 import { join } from "path";
-import { Input } from "../components/ui/input";
-import { Label } from "@/components/ui/label";
 export default function ServerUploadPage() {
   async function upload(data: FormData) {
     "use server";
@@ -25,23 +23,22 @@ export default function ServerUploadPage() {
 
   return (
     <main>
-      <div className='grid w-full max-w-sm items-center gap-1.5 bg-black text-white'>
-        <Label htmlFor='picture'>Picture</Label>
-        <Input
-          id='picture'
-          type='file'
-        />
-      </div>
-      <h1>React Server Component: Upload</h1>
+      {/* <h1>React Server Component: Upload</h1> */}
       <form action={upload}>
+        {/* <input
+          type='file'
+          name='file'
+          className=''
+        /> */}
         <input
           type='file'
           name='file'
-          className='btn'
+          className='file-input file-input-bordered file-input-error w-full max-w-xs'
         />
         <input
           type='submit'
           value='Upload'
+          className='btn theme-background border-orange-600 btn-error m-2'
         />
       </form>
     </main>

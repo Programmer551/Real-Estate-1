@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import { withUt } from "uploadthing/tw";
+// import { withUt } from "uploadthing/tw";
 const config = {
   darkMode: ["class"],
   content: [
@@ -79,7 +79,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 } satisfies Config;
 
 export default config;
