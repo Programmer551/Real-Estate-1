@@ -1,7 +1,6 @@
 // import { testing } from "@/utils/actions";
 import Featured from "@/components/featured";
 import Uploader from "../../components/Uploader";
-import Navbar from "@/components/Navbar";
 export default function Home() {
   // testing();
   return (
@@ -121,9 +120,9 @@ export default function Home() {
             Search
           </button>
         </form>
-        <Uploader />
+        {/* <Uploader /> */}
       </section>
-      {/* <Uploader></Uploader> */}
+
       <Featured />
     </>
   );

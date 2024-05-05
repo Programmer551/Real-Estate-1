@@ -40,7 +40,7 @@ if (mongo.connection.models["properties"]) {
   });
   try {
     delete mongo.connection.models["properties"];
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error deleting model 'properties':", error.message);
   }
   const properties = mongo.model("properties", propertiesSchema);

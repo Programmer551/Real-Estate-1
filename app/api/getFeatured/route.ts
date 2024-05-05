@@ -1,4 +1,5 @@
-import properties from "../../../utils/model";
+// import properties from "../../../utils/model";
+const properties = require("../../../utils/model");
 // import ConnectDB from "../../../utils/connect";
 require("dotenv").config();
 
@@ -9,8 +10,6 @@ export const GET = async (req: Request) => {
     const featuredProperties = await properties.find({ isFeatured: true });
     return Response.json({ featuredProperties });
   } catch (error) {
-    console.log("ERRORRRRRRRRRRR");
-    console.log(error);
     return Response.json(error);
   }
 };
