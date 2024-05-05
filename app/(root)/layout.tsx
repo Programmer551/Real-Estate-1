@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <div className='flex h-screen flex-col'>
       <main className='main-bg'>
-        <></>
+        {/* <></> */}
         <Navbar />
         {children}
       </main>

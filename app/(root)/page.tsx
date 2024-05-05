@@ -1,10 +1,12 @@
 // import { testing } from "@/utils/actions";
 import Featured from "@/components/featured";
 import Uploader from "../../components/Uploader";
+import Navbar from "@/components/Navbar";
 export default function Home() {
   // testing();
   return (
     <>
+      {/* <Navbar /> */}
       <section className='flex justify-center items-center flex-col h-96'>
         <h1 className='text-white text-6xl m-8'>Find Your Dream Home</h1>
         <p className='text-white text-2xl'>
@@ -53,6 +55,7 @@ export default function Home() {
               className='p-2 selection-border'>
               China
             </option>
+
             <option
               value='Turkey'
               className='p-2 selection-border'>
@@ -118,8 +121,9 @@ export default function Home() {
             Search
           </button>
         </form>
-        {/* <Uploader /> */}
+        <Uploader />
       </section>
+      {/* <Uploader></Uploader> */}
       <Featured />
     </>
   );
