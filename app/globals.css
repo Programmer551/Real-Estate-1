@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .main-bg {
-  background: url("../images//buildings_image.jfif") no-repeat;
+  background: url("../images/buildings_image.jfif") no-repeat;
   background-size: cover;
   width: 100vw;
   height: 70vh;
@@ -39,4 +39,24 @@ nav {
 }
 .theme-color {
   color: #ff5a3c;
+}
+body {
+  overflow-x: hidden;
+}
+.good-border {
+  border: 10px solid black;
+}
+.different-background {
+  background-color: #0b2c3d;
+}
+.background-circle {
+  background-image: url("../images/backgroundCircle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+.normal-background {
+  border: 2px solid #ff5a3c;
+  border-radius: 5px;
 }

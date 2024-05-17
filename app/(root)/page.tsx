@@ -1,6 +1,10 @@
 // import { testing } from "@/utils/actions";
 import Featured from "@/components/featured";
 import Uploader from "../../components/Uploader";
+import Location from "@/components/location";
+import WhyChooseUs from "@/components/whyChooseUs";
+import Experts from "@/components/experts";
+import SemiFooter from "@/components/semiFooter";
 export default function Home() {
   // testing();
   return (
@@ -19,11 +23,7 @@ export default function Home() {
           />
 
           <select className='select select-bordered w-full max-w-xs mr-4'>
-            <option
-              disabled
-              selected>
-              Country
-            </option>
+            <option disabled>Location</option>
             <option
               value='USA'
               className='p-2 selection-border'>
@@ -124,6 +124,10 @@ export default function Home() {
       </section>
 
       <Featured />
+      <Location />
+      <WhyChooseUs />
+      <Experts />
+      <SemiFooter />
     </>
   );
 }
