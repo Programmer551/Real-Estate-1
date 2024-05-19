@@ -1,4 +1,6 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer";
+import Search from "@/components/search";
 import React from "react";
 export default function RootLayout({
   children,
@@ -10,6 +12,7 @@ export default function RootLayout({
       <main className='main-bg'>
         {/* <></> */}
         <Navbar />
+        <Search />
         {children}
       </main>
     </div>

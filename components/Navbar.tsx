@@ -11,16 +11,18 @@ const Navbar = () => {
   return (
     <nav className='bg-white m-8 p-4 flex items-center justify-between'>
       {/* <UserIcon /> */}
-      <div className='flex items-center'>
-        <Image
-          src={Logo}
-          width={30}
-          height={30}
-          alt='This is the logo'></Image>
-        <h2 className='text-cyan-700 rounded-lg border-0	border-solid ml-2 '>
-          Easy Housing
-        </h2>
-      </div>
+      <Link href={"/"}>
+        <div className='flex items-center cursor-pointer'>
+          <Image
+            src={Logo}
+            width={30}
+            height={30}
+            alt='This is the logo'></Image>
+          <h2 className='text-cyan-700 rounded-lg border-0	border-solid ml-2 '>
+            Easy Housing
+          </h2>
+        </div>
+      </Link>
       <div className='flex items-center'>
         <Link
           href={"/"}

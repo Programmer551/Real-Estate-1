@@ -5,7 +5,10 @@ const ConnectDb = require("./connect");
 // import { revalidatePath } from "next/cache";
 const properties = require("./model");
 ConnectDb(process.env.MONGO_URI);
-export const testing = async () => {
-  console.log("This is working");
-  await properties.find();
+export const search = async (formData: FormData) => {
+  try {
+    const keyword = formData.get("keyword");
+    const location = formData.get("location");
+    const price = formData.get("price");
+  } catch (error) {}
 };
