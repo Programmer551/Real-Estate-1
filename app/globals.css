@@ -62,6 +62,13 @@ body {
   border: 2px solid #ff5a3c;
   border-radius: 5px;
 }
-.position-control {
-  /* top: -1px; */
+
+.about-div {
+  width: 1000px;
 }
+/* .about-section {
+  background: url("../images/aboutBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 90px;
+} */

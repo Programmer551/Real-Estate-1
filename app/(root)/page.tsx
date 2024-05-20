@@ -6,6 +6,7 @@ import Location from "@/components/location";
 import WhyChooseUs from "@/components/whyChooseUs";
 import Experts from "@/components/experts";
 import SemiFooter from "@/components/semiFooter";
+import Footer from "@/components/footer";
 export default function Home() {
   // testing();
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <Experts />
       <SemiFooter />
+      <Footer />
     </>
   );
 }
