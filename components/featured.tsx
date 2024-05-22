@@ -1,22 +1,25 @@
-// "use client";
+import { getFeatured } from "@/utils/actions";
 import Card from "./card";
-// import { useEffect, useState } from "react";
-const Featured = async () => {
-  const data = await fetch("http://localhost:3000/api/getFeatured");
-  let featuredProperties = await data.json();
-  featuredProperties = featuredProperties.featuredProperties;
 
+const Featured = async () => {
+  let featuredProperties = await getFeatured();
   return (
     <>
       <section className='mt-48 flex flex-col items-center text-3xl'>
         <h3 className='theme-color mb-16'>Our Properties</h3>
-        <h1>Our Featured Properties</h1>
+        <p>Our Featured Properties</p>
         <div className='flex flex-wrap justify-center'>
           {featuredProperties.map((property: any) => {
+            const { Img, name, price, forWhat, location, _id } = property;
             return (
               <Card
                 key={property._id}
-                {...property}
+                name={name}
+                Img={Img}
+                price={price}
+                location={location}
+                forWhat={forWhat}
+                _id={_id}
               />
             );
           })}

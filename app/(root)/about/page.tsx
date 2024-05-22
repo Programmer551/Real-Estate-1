@@ -7,7 +7,7 @@ const About = () => {
     <>
       <section className='flex items-center justify-between mb-8 about-section p-40'>
         <div className='flex items-baseline flex-col about-div'>
-          <h1 className='theme-color text-5xl m-8 '>About Us</h1>
+          <p className='theme-color text-5xl m-8 '>About Us</p>
           <p className=''>
             Welcome to Prestige Realty, your premier destination for all your
             real estate needs. Established in 2005, we have been dedicated to
@@ -89,9 +89,9 @@ const About = () => {
           />
 
           <div>
-            <h1 className='text-5xl theme-color mb-4'>
+            <p className='text-5xl theme-color mb-4'>
               Why should you choose us
-            </h1>
+            </p>
             <p>Creating quality lifestyles,building stronger communities</p>
             <div className='flex justify-between items-center w-96 flex-wrap'>
               <div className='flex justify-center items-center m-4'>

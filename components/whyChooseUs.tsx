@@ -6,7 +6,7 @@ import features4 from "../images/features4.png";
 const WhyChooseUs = () => {
   return (
     <section className='flex items-center different-background flex-col'>
-      <h1 className='text-white text-3xl m-4'>Why Choose Us?</h1>
+      <p className='text-white text-3xl m-4'>Why Choose Us?</p>
       <div className='flex'>
         <div className='card w-96 bg-base-100 shadow-xl flex justify-center items-center m-4'>
           <div className='mt-2 background-circle flex justify-center items-center h-10 w-10'>

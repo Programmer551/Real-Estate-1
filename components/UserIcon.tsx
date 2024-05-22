@@ -1,8 +1,6 @@
 "use client";
 import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-
 const UserIcon = () => {
   const { user, isLoaded } = useUser();
 

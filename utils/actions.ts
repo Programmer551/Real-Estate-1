@@ -2,7 +2,7 @@
 // import { redirect } from "next/navigation";
 require("dotenv").config();
 const ConnectDb = require("./connect");
-// const properties = require("./model");
+const properties = require("./model");
 const contact = require("./contact-model");
 ConnectDb(process.env.MONGO_URI);
 export const formSubmit = async (formData: FormData) => {
@@ -16,4 +16,12 @@ export const formSubmit = async (formData: FormData) => {
   } catch (error) {
     console.log(error);
   }
+};
+export const getFeatured = async () => {
+  const featuredProperties = await properties.find({ isFeatured: true });
+  return featuredProperties;
+};
+export const getAll = async () => {
+  const Properties = await properties.find();
+  return Properties;
 };

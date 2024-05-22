@@ -5,7 +5,7 @@ const SemiFooter = () => {
   return (
     <section>
       <div className='flex justify-center items-center flex-col mt-16'>
-        <h1 className='text-3xl m-4'>Find Your Dream Home Today</h1>
+        <p className='text-3xl m-4'>Find Your Dream Home Today</p>
         <Link href={"/contact"}>
           <button className='btn theme-background btn-error'>Contact Us</button>
         </Link>

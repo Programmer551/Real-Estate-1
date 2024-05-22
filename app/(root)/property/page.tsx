@@ -1,13 +1,12 @@
 "use client";
-// import ServerUploadPage from "@/components/Uploader";
+
 import Card from "@/components/card";
 import Footer from "@/components/footer";
 import Loading from "@/components/loading";
-import Search from "@/components/search";
+
 import { useEffect, useState, useRef } from "react";
-// import { search } from "@/utils/actions";
-// import Link from "next/link";
-import { useRouter } from "next/navigation";
+
+// import { useRouter } from "next/navigation";
 const Property = () => {
   const [Properties, setProperties]: any = useState();
   useEffect(() => {
@@ -21,7 +20,7 @@ const Property = () => {
   const [keyword, setKeyword] = useState();
   const locationRef: any = useRef();
   const priceRef: any = useRef();
-  const router = useRouter();
+  // const router = useRouter();
 
   const fire = async (e: any) => {
     e.preventDefault();
@@ -66,21 +65,16 @@ const Property = () => {
           return obj;
         }
       });
-      // console.log(updated);
       updated = updated.filter(
         (item: any) => item !== null && typeof item === "object",
       );
       setProperties(updated);
-
-      // router.push("/property");
     } catch (error) {
       console.log(error);
     }
   };
-  // Properties = Properties.featuredProperties;
   return (
     <>
-      {/* <Search /> */}
       <div className='flex justify-center items-center flex-col'>
         <form className='flex bg-white h-16 justify-center items-center m-4 perfect-border relative bottom-28 position-control'>
           <input
@@ -209,7 +203,7 @@ const Property = () => {
       </div>
       <section className='mt-48 flex flex-col items-center text-3xl'>
         <h3 className='theme-color mb-16'>Our Properties</h3>
-        {/* <h1>Our Featured Properties</h1> */}
+        {/* <p>Our Featured Properties</p> */}
         <div className='flex flex-wrap justify-center'>
           {Properties ? (
             Properties.map((property: any) => {

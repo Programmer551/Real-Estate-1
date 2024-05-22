@@ -9,8 +9,8 @@ const Experts = () => {
     <section>
       <div className='flex justify-center items-center m-4'>
         <div className='flex justify-center flex-col items-center m-4'>
-          <h1 className='theme-color text-xl m-4'>Experties is Here</h1>
-          <h1 className='text-3xl m-4'>Our Exclusive Agents</h1>
+          <p className='theme-color text-2xl m-4'>Experties is Here</p>
+          <p className='text-3xl m-4'>Our Exclusive Agents</p>
         </div>
       </div>
       <div className='flex justify-evenly items-center flex-wrap'>
@@ -21,7 +21,7 @@ const Experts = () => {
               alt='Agent'
             />
             <div>
-              <h1 className='text-2xl font-semibold'>Jenny White</h1>
+              <p className='text-2xl font-semibold'>Jenny White</p>
               <div className='flex justify-center items-center normal-background opacity-70 mt-2'>
                 <Image
                   src={call}
@@ -38,7 +38,7 @@ const Experts = () => {
               alt='Agent'
             />
             <div>
-              <h1 className='text-2xl font-semibold'>Merry Rose</h1>
+              <p className='text-2xl font-semibold'>Merry Rose</p>
               <div className='flex justify-center items-center normal-background opacity-70 mt-2'>
                 <Image
                   src={call}
@@ -57,7 +57,7 @@ const Experts = () => {
               alt='Agent'
             />
             <div>
-              <h1 className='text-2xl font-semibold'>Jhon White</h1>
+              <p className='text-2xl font-semibold'>Jhon White</p>
               <div className='flex justify-center items-center normal-background opacity-70 mt-2'>
                 <Image
                   src={call}
@@ -75,7 +75,7 @@ const Experts = () => {
               alt='Agent'
             />
             <div>
-              <h1 className='text-2xl font-semibold'>Alex Roy</h1>
+              <p className='text-2xl font-semibold'>Alex Roy</p>
               <div className='flex justify-center items-center normal-background opacity-70 mt-2'>
                 <Image
                   src={call}

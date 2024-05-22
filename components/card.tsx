@@ -2,7 +2,8 @@ import Image from "next/image";
 import locationLogo from "../images/location.jpg";
 import Link from "next/link";
 const Card = (params: any) => {
-  const { Img, name, price, forWhat, location, details, _id } = params;
+  const { Img, name, price, forWhat, location, _id } = params;
+
   return (
     <Link href={`/properties/${_id}`}>
       <div className='card w-96 bg-base-100 shadow-xl m-16'>

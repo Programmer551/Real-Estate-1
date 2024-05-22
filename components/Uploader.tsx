@@ -23,7 +23,7 @@ export default function ServerUploadPage() {
 
   return (
     <main>
-      {/* <h1>React Server Component: Upload</h1> */}
+      {/* <p>React Server Component: Upload</p> */}
       <form action={upload}>
         {/* <input
           type='file'
