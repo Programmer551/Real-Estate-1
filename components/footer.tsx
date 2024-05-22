@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className='footer p-10 bg-base-300 different-background text-white'>
       <div>
-        <h6 className='footer-title theme-color'>Contact</h6>
+        <h6 className='footer-title opacity-100 theme-color'>Contact</h6>
         <div className='flex justify-center items-center mt-2'>
           <Image
             src={address}
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <h6 className='footer-title theme-color'>Quick Links</h6>
+        <h6 className='footer-title opacity-100 theme-color'>Quick Links</h6>
 
         <Link
           className='link link-hover'
@@ -59,7 +59,7 @@ const Footer = () => {
         </Link>
       </div>
       <div>
-        <h6 className='footer-title theme-color'>Social</h6>
+        <h6 className='footer-title opacity-100 theme-color'>Social</h6>
         <div className='grid grid-flow-col gap-4'>
           <a
             href='https://x.com'

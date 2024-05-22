@@ -39,11 +39,9 @@ nav {
 }
 .theme-color {
   color: #ff5a3c;
-  /* outline: black; */
 }
 body {
   overflow-x: hidden;
-  /* background-color: gray; */
 }
 .good-border {
   border: 10px solid black;
