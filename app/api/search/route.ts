@@ -18,7 +18,10 @@ export const POST = async (request: any) => {
       upperPriceLimit: string | null;
       lowerPriceLimit: string | null;
     } = req;
-
+    console.log(location, upperPriceLimit, lowerPriceLimit);
+    if (location == "Location") {
+      location = null;
+    }
     if (location && upperPriceLimit) {
       const filteredProperties = await properties.find({
         price: { $gt: lowerPriceLimit, $lt: upperPriceLimit },
@@ -33,11 +36,10 @@ export const POST = async (request: any) => {
     } else if (!location && upperPriceLimit) {
       const filteredProperties = await properties.find({
         price: { $gt: lowerPriceLimit, $lt: upperPriceLimit },
-        location: location,
       });
       return Response.json({ success: true, properties: filteredProperties });
     } else {
-      const filteredProperties = await properties.find({});
+      const filteredProperties = await properties.find();
       return Response.json({ success: true, properties: filteredProperties });
     }
   } catch (error: any) {
