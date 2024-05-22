@@ -40,11 +40,6 @@ const Navbar = () => {
           Property
         </Link>
         <Link
-          href={"/blog"}
-          className={`m-4 ${pathname == "/blog" ? "active" : ""}`}>
-          Blog
-        </Link>
-        <Link
           href={"/contact"}
           className={`m-4 ${pathname == "/contact" ? "active" : ""}`}>
           Contact us

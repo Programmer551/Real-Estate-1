@@ -5,8 +5,8 @@ import Footer from "@/components/footer";
 import Loading from "@/components/loading";
 import Search from "@/components/search";
 import { useEffect, useState, useRef } from "react";
-import { search } from "@/utils/actions";
-import Link from "next/link";
+// import { search } from "@/utils/actions";
+// import Link from "next/link";
 import { useRouter } from "next/navigation";
 const Property = () => {
   const [Properties, setProperties]: any = useState();
@@ -55,12 +55,16 @@ const Property = () => {
       // console.log(data);
 
       let updated = data.properties.map((obj: any) => {
-        const isVisible = obj.name.toLowerCase().includes(keyword);
+        if (typeof keyword == "string") {
+          const isVisible = obj.name.toLowerCase().includes(keyword);
 
-        if (isVisible) {
+          if (isVisible) {
+            return obj;
+          }
+          return null;
+        } else {
           return obj;
         }
-        return null;
       });
       // console.log(updated);
       updated = updated.filter(

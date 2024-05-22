@@ -66,9 +66,12 @@ body {
 .about-div {
   width: 1000px;
 }
-/* .about-section {
-  background: url("../images/aboutBackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 90px;
-} */
+.submit-width {
+  width: 450px;
+}
+.contact-width {
+  width: 5000px;
+}
+.properties-section {
+  height: 100vh;
+}

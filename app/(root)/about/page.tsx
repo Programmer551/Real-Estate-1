@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import Image from "next/image";
 import image from "../../../images/whyShouldYouChooseUs.png";
+import tick from "../../../images/tick.png";
 const About = () => {
   return (
     <>
@@ -80,14 +81,49 @@ const About = () => {
         </div>
       </section>
       <section>
-        <div>
+        <div className='flex justify-evenly items-center'>
           <Image
             src={image}
             alt='Image'
+            className='m-8'
           />
-        </div>
-        <div>
-          <h1 className='text-5xl theme-color'>Why should you choose us</h1>
+
+          <div>
+            <h1 className='text-5xl theme-color mb-4'>
+              Why should you choose us
+            </h1>
+            <p>Creating quality lifestyles,building stronger communities</p>
+            <div className='flex justify-between items-center w-96 flex-wrap'>
+              <div className='flex justify-center items-center m-4'>
+                <Image
+                  src={tick}
+                  alt='Tick'
+                />
+                <p className='m-2'>World Class</p>
+              </div>
+              <div className='flex justify-center items-center m-4'>
+                <Image
+                  src={tick}
+                  alt='Tick'
+                />
+                <p className='m-2'>Affordable</p>
+              </div>
+              <div className='flex justify-center items-center m-4'>
+                <Image
+                  src={tick}
+                  alt='Tick'
+                />
+                <p className='m-2'>Trusted</p>
+              </div>
+              <div className='flex justify-center items-center m-4'>
+                <Image
+                  src={tick}
+                  alt='Tick'
+                />
+                <p className='m-2'>Amenities</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />
