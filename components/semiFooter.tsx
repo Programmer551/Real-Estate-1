@@ -1,5 +1,5 @@
 import Image from "next/image";
-import findYourDreamHome from "../images/findYourDreamHome.png";
+import findYourDreamHome from "../images/FindYourDreamHome.png";
 import Link from "next/link";
 const SemiFooter = () => {
   return (
