@@ -219,7 +219,6 @@ const Property = () => {
           )}
         </div>
       </section>
-      {Properties ? <Footer /> : null}
     </>
   );
 };

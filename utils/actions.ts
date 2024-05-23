@@ -1,5 +1,5 @@
 "use server";
-// import { redirect } from "next/navigation";
+// import { auth, clerkClient } from "@clerk/nextjs/server";
 require("dotenv").config();
 const ConnectDb = require("./connect");
 const properties = require("./model");
@@ -21,7 +21,7 @@ export const getFeatured = async () => {
   const featuredProperties = await properties.find({ isFeatured: true });
   return featuredProperties;
 };
-export const getAll = async () => {
-  const Properties = await properties.find();
-  return Properties;
-};
+// export const getAll = async () => {
+//   const Properties = await properties.find();
+//   return Properties;
+// };

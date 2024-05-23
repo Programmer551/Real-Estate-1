@@ -1,4 +1,5 @@
 "use client";
+require("dotenv").config();
 import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 const UserIcon = () => {

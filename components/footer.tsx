@@ -4,7 +4,9 @@ import address from "../images/address.png";
 import mail from "../images/email.png";
 import phone from "../images/phone.png";
 import Link from "next/link";
+import { auth } from "@clerk/nextjs/server";
 const Footer = () => {
+  const { userId } = auth();
   return (
     <footer className='footer p-10 bg-base-300 different-background text-white'>
       <div>
@@ -57,6 +59,13 @@ const Footer = () => {
           href={"/contact"}>
           Contact us
         </Link>
+        {userId == process.env.ADMIN_ID ? (
+          <Link
+            href={"/admin"}
+            className='link link-hover'>
+            Admin Pannel
+          </Link>
+        ) : null}
       </div>
       <div>
         <h6 className='footer-title opacity-100 theme-color'>Social</h6>
