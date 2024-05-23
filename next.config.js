@@ -5,7 +5,7 @@
 module.exports = {
   headers: () => [
     {
-      source: "/*",
+      source: "/admin",
       headers: [
         {
           key: "Cache-Control",
