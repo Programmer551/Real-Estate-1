@@ -11,7 +11,9 @@ const Property = () => {
   const [Properties, setProperties]: any = useState();
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch("http://localhost:3000/api/getAllProperties");
+      const data = await fetch(
+        "https://real-estate-project-flame.vercel.app/api/getAllProperties",
+      );
       let Properties = await data.json();
       setProperties(Properties);
     };
@@ -38,17 +40,20 @@ const Property = () => {
         upperPriceLimit = ++upperPriceLimit;
         lowerPriceLimit = --lowerPriceLimit;
       }
-      const response = await fetch("http://localhost:3000/api/search", {
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://real-estate-project-flame.vercel.app/api/search",
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+          body: JSON.stringify({
+            location,
+            lowerPriceLimit,
+            upperPriceLimit,
+          }),
         },
-        method: "POST",
-        body: JSON.stringify({
-          location,
-          lowerPriceLimit,
-          upperPriceLimit,
-        }),
-      });
+      );
 
       const data = await response.json();
       // console.log(data);

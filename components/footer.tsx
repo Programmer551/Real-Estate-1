@@ -51,11 +51,6 @@ const Footer = () => {
         </Link>
         <Link
           className='link link-hover'
-          href={"/blog"}>
-          Blog
-        </Link>
-        <Link
-          className='link link-hover'
           href={"/contact"}>
           Contact us
         </Link>
