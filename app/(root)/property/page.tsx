@@ -1,7 +1,7 @@
 "use client";
 
 import Card from "@/components/card";
-import Footer from "@/components/footer";
+
 import Loading from "@/components/loading";
 
 import { useEffect, useState, useRef } from "react";
