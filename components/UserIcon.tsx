@@ -2,13 +2,13 @@
 require("dotenv").config();
 import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
-const UserIcon = () => {
+const UserIcon = ({ classSwap }: { classSwap: string }) => {
   const { user, isLoaded } = useUser();
 
   return (
     <>
       {isLoaded && user ? (
-        <div className='w-10 rounded-full ml-8 '>
+        <div className={`w-10 rounded-full ml-8 ${classSwap}`}>
           <UserButton afterSignOutUrl='/' />
         </div>
       ) : (

@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
   return (
     <section className='flex items-center different-background flex-col'>
       <p className='text-white text-3xl m-4'>Why Choose Us?</p>
-      <div className='flex'>
+      <div className='flex flex-wrap justify-center items-center'>
         <div className='card w-96 bg-base-100 shadow-xl flex justify-center items-center m-4'>
           <div className='mt-2 background-circle flex justify-center items-center h-10 w-10'>
             <div>

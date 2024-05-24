@@ -5,10 +5,10 @@ import tick from "../../../images/tick.png";
 const About = () => {
   return (
     <>
-      <section className='flex items-center justify-between mb-8 about-section p-40'>
-        <div className='flex items-baseline flex-col about-div'>
-          <p className='theme-color text-5xl m-8 '>About Us</p>
-          <p className=''>
+      <section className='flex items-center mb-8 about-section p-40 about-section'>
+        <div className='flex flex-col about-div'>
+          <p className='theme-color text-5xl m-8'>About Us</p>
+          <p className='about-para'>
             Welcome to Prestige Realty, your premier destination for all your
             real estate needs. Established in 2005, we have been dedicated to
             providing exceptional real estate services to clients throughout the
@@ -81,7 +81,7 @@ const About = () => {
         </div>
       </section>
       <section>
-        <div className='flex justify-evenly items-center'>
+        <div className='flex justify-evenly items-center whyChooseUs'>
           <Image
             src={image}
             alt='Image'

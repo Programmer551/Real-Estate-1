@@ -6,7 +6,7 @@ const Card = (params: any) => {
 
   return (
     <Link href={`/properties/${_id}`}>
-      <div className='card w-96 bg-base-100 shadow-xl m-16'>
+      <div className='card w-96 bg-base-100 shadow-xl m-16 margin-control'>
         <figure className='max-h-60 overflow-hidden	'>
           <img
             src={Img}

@@ -4,7 +4,7 @@
 .main-bg {
   background: url("../images/buildings_image.jfif") no-repeat;
   background-size: cover;
-  width: 100vw;
+  /* width: 100vw; */
   height: 70vh;
 }
 .active {
@@ -41,7 +41,7 @@ nav {
   color: #ff5a3c;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .good-border {
   border: 10px solid black;
@@ -72,4 +72,60 @@ body {
 }
 .properties-section {
   height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+  .swapping {
+    display: none;
+  }
+  .search {
+    visibility: hidden;
+  }
+  .margin-control {
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  .hamburger {
+    display: inline-grid;
+    margin-bottom: 10px;
+  }
+  .about-section {
+    flex-direction: column;
+
+    /* overflow: hidden; */
+  }
+  .about-para {
+    width: 100vw;
+  }
+  .whyChooseUs {
+    flex-direction: column;
+  }
+  .about-div {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    overflow: none !important;
+  }
+}
+
+.nav-tag {
+  display: block;
+  margin: 0;
+  width: 60vw;
+  border: 0px;
+  height: 80vh;
+}
+.links-list {
+  flex-direction: column;
+  align-items: normal;
+}
+
+.userIcon {
+  margin-left: 10px;
+}
+body {
+  overflow: none !important;
 }
