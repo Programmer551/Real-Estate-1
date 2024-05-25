@@ -85,14 +85,16 @@ const About = () => {
           <Image
             src={image}
             alt='Image'
-            className='m-8'
+            className='m-8 about-image'
           />
 
           <div>
-            <p className='text-5xl theme-color mb-4'>
+            <p className='text-5xl theme-color mb-4 text-size-control'>
               Why should you choose us
             </p>
-            <p>Creating quality lifestyles,building stronger communities</p>
+            <p className='text-center'>
+              Creating quality lifestyles,building stronger communities
+            </p>
             <div className='flex justify-between items-center w-96 flex-wrap'>
               <div className='flex justify-center items-center m-4'>
                 <Image

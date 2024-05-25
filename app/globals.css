@@ -40,9 +40,7 @@ nav {
 .theme-color {
   color: #ff5a3c;
 }
-body {
-  /* overflow-x: hidden; */
-}
+
 .good-border {
   border: 10px solid black;
 }
@@ -92,11 +90,16 @@ body {
   }
   .about-section {
     flex-direction: column;
-
-    /* overflow: hidden; */
+  }
+  .about-image {
+    width: 200px;
+  }
+  .text-size-control {
+    font-size: 2rem;
+    text-align: center;
   }
   .about-para {
-    width: 100vw;
+    width: 90vw;
   }
   .whyChooseUs {
     flex-direction: column;
@@ -106,9 +109,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-  body {
-    overflow: none !important;
+  .change-width {
+    width: 300px;
   }
+  /* body {
+    overflow: none !important;
+  } */
 }
 
 .nav-tag {
@@ -126,6 +132,7 @@ body {
 .userIcon {
   margin-left: 10px;
 }
+
 body {
-  overflow: none !important;
+  overflow-x: hidden !important;
 }

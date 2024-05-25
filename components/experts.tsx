@@ -15,7 +15,7 @@ const Experts = () => {
       </div>
       <div className='flex justify-evenly items-center flex-wrap'>
         <div>
-          <div className='flex justify-center items-center mb-4'>
+          <div className='flex justify-center items-center mb-4 flex-wrap'>
             <Image
               src={agent1}
               alt='Agent'
@@ -32,7 +32,7 @@ const Experts = () => {
               </div>
             </div>
           </div>
-          <div className='flex justify-center items-center '>
+          <div className='flex justify-center items-center flex-wrap '>
             <Image
               src={agent3}
               alt='Agent'
@@ -51,7 +51,7 @@ const Experts = () => {
           </div>
         </div>
         <div>
-          <div className='flex justify-center items-center mb-4'>
+          <div className='flex justify-center items-center mb-4 flex-wrap'>
             <Image
               src={agent2}
               alt='Agent'
@@ -69,7 +69,7 @@ const Experts = () => {
             </div>
           </div>
 
-          <div className='flex justify-center items-center '>
+          <div className='flex justify-center items-center flex-wrap '>
             <Image
               src={agent4}
               alt='Agent'
