@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const PropertiesDetails = ({
   details,
   name,
@@ -31,6 +33,11 @@ const PropertiesDetails = ({
               <div className='flex'>
                 <span className='title-font font-medium text-2xl text-gray-900'>
                   ${price}
+                  <Link
+                    href={"/"}
+                    className='btn btn-error theme-background ml-4'>
+                    Go Back
+                  </Link>
                 </span>
               </div>
             </div>

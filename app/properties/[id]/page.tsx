@@ -15,7 +15,6 @@ const Properties = async ({ params }: { params: { id: string } }) => {
     },
   );
   const data = await response.json();
-  console.log(data);
   return <PropertiesDetails {...data.data} />;
 };
 
