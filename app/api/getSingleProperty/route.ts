@@ -14,4 +14,4 @@ export const POST = async (request: Request) => {
   } catch (error) {
     return Response.json({ error });
   }
-}
+};
